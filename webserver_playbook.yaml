@@ -1,0 +1,13 @@
+---
+- hosts: webservers
+  tasks:
+
+  - name: Ensure filewall rule is in place for site
+    win_firewall_rule:
+      name: Globomantics
+      enabled: yes
+      state: present
+      localport: 8080
+      action: allow
+      direction: in
+      protocol: tcp
