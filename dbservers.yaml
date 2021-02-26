@@ -1,0 +1,4 @@
+---
+- hosts: databaseservers
+  roles:
+   - dbserver
