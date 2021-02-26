@@ -1,5 +1,5 @@
 ---
-- name: Ensure filewall rule is in place for site
+- name: Ensure firewall rule is in place for site
   win_firewall_rule:
       name: Globomantics
       enabled: yes
@@ -9,7 +9,7 @@
       direction: in
       protocol: tcp
 
-- name: Ensure filewall rule is in place for http
+- name: Ensure firewall rule is in place for http
   win_firewall_rule:
       name: Globomantics http test
       enabled: yes

@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  roles:
+    - feature
+    - firewall_rules
+    - copy_files

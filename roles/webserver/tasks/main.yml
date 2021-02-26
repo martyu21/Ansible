@@ -1,5 +1,0 @@
----
-- include_tasks: IISenabled.yml
-- include_tasks: firewallrules.yml
-- include_tasks: Copyfile.yml
-
