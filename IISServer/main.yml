@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: iisserver
   roles:
     - feature
     - firewall_rules
