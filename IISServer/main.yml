@@ -1,5 +1,9 @@
 ---
-- hosts: webservers
+- hosts: iisserver
+
+  vars_files:
+    - secrets/secrets.yml
+
   roles:
     - feature
     - firewall_rules

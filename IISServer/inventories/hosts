@@ -1,0 +1,22 @@
+
+[domaincontroller]
+DC01.WESTSIDE.LOCAL
+
+[domaincontroller:vars]
+ansible_user="{{ westside_user }}"
+ansible_password="{{ westside_password }}"
+ansible_port=5985
+ansible_connection=winrm
+ansible_winrm_transport=credssp
+ansible_winrm_server_cert_validation=ignore
+
+[iisserver]
+M01.WESTSIDE.LOCAL
+
+[iisserver:vars]
+ansible_user="{{ westside_user }}"
+ansible_password="{{ westside_password }}"
+#ansible_port=5985
+ansible_connection=winrm
+ansible_winrm_transport=credssp
+ansible_winrm_server_cert_validation=ignore
